@@ -1,3 +1,4 @@
+import json
 import os
 import random
 
@@ -6,7 +7,8 @@ from discord.ext import commands
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.environ['DISCORD_TOKEN']
+
+cid = json.load(open('json/discord.json', 'r', encoding="utf-8_sig"))["guild"]["shipInfo"]["channelId"]
 
 description = """An example bot to showcase the discord.ext.commands extension module.
 There are a number of utility commands being showcased here."""
@@ -76,4 +78,4 @@ async def _bot(ctx):
     await ctx.send("Yes, the bot is cool.")
 
 
-bot.run(TOKEN)
+bot.run(os.environ['DISCORD_TOKEN'])

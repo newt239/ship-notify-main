@@ -1,0 +1,120 @@
+{
+    "default": {
+        "messages": [
+            {
+                "type": "text",
+                "text": "Textfield is empty"
+            }
+        ]
+    },
+    "flexMessage": {
+        "messages": [
+            {
+                "type": "flex",
+                "altText": "SHIPに更新がありました",
+                "contents": {
+                    "type": "bubble",
+                    "body": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "SHIP-NOTIFY",
+                                "weight": "bold",
+                                "color": "#1DB446",
+                                "size": "sm"
+                            },
+                            {
+                                "type": "text",
+                                "text": "SHIP Update Notify",
+                                "weight": "bold",
+                                "size": "xxl",
+                                "margin": "md"
+                            },
+                            {
+                                "type": "text",
+                                "text": "getTime:",
+                                "size": "xs",
+                                "color": "#aaaaaa",
+                                "wrap": true
+                            },
+                            {
+                                "type": "separator",
+                                "margin": "xxl"
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "button",
+                                "style": "primary",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "サイトで確認",
+                                    "uri": ""
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "eachMenu": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+            {
+                "type": "text",
+                "text": "",
+                "size": "sm",
+                "color": "#555555",
+                "flex": 1
+            },
+            {
+                "type": "text",
+                "text": "",
+                "size": "sm",
+                "color": "#111111",
+                "flex": 3,
+                "wrap": true
+            }
+        ]
+    },
+    "channelHead": {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xxl",
+        "spacing": "sm",
+        "contents": [
+            {
+                "type": "text",
+                "text": "高校連絡事項",
+                "size": "xl",
+                "color": "#1DB446"
+            }
+        ]
+    },
+    "separate": {
+        "type": "separator",
+        "margin": "xxl"
+    },
+    "channelList": [
+        {
+            "name": "highCon",
+            "jpName": "高校連絡事項"
+        },
+        {
+            "name": "highStudy",
+            "jpName": "高校学習教材"
+        },
+        {
+            "name": "highSchoolNews",
+            "jpName": "高校学校通信"
+        }
+    ]
+}

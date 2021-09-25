@@ -1,5 +1,7 @@
 # ship-notify-main
 
+note: このリポジトリはホームブランチの名前に``main``を使っています
+
 Dockerをベースに``ship-notify-public``リポジトリを一から作り直すリポジトリ。ライブラリ``py-cord``のv2.0リリース後対応し、順次以降予定
 
 ## setup
@@ -12,14 +14,6 @@ docker run -it "ship-notify"
 git add .
 git commit -m "commit message"
 git push heroku master
-```
-
-## other
-
-### Herokuに設定済みの環境変数
-```
-DISCORD_TOKEN
-STATUS
 ```
 
 ## todo
