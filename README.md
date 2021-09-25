@@ -13,9 +13,18 @@ git add .
 git commit -m "commit message"
 git push heroku master
 ```
+
+## other
+
+### Herokuに設定済みの環境変数
+```
+DISCORD_TOKEN
+STATUS
+```
+
 ## todo
 
-- 環境変数の設定(dockerだから普通と違いそう)
+- 環境変数の設定
 - dynoの管理など(とりあえず停止→ ``heroku ps:scale web=0`` )
 - py-cord 2.0のリリース待ち
 - https://devcenter.heroku.com/ja/articles/build-docker-images-heroku-yml
